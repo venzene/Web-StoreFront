@@ -1,3 +1,5 @@
+// This is the logic we used earlier for vanilla node js. now its of no use, but let the file remain for peace.
+
 const fs = require('fs');
 
 const requestHandler = (req, res) => {
