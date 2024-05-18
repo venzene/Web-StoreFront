@@ -13,7 +13,7 @@ router.get('/add-product', isAuth, adminController.getAddProduct);
 // /admin/products=> GET request
 router.get('/products', isAuth, adminController.getProducts);
 
-// // /admin/add-product=> POST request
+// /admin/add-product=> POST request
 router.post('/add-product', isAuth, adminController.postAddProduct);
 
 router.get('/edit-product/:productId', isAuth, adminController.getEditProduct);
