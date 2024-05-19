@@ -24,10 +24,10 @@
             </div>
             <input type="hidden" name="_csrf" value="<%=csrfToken%>">
             <button class="btn" type="submit">Login</button>
+            <div class="form-control"> <!-- Assign form-control class for consistent styling -->
+                <a class="btn" href="/reset">Reset Password</a> <!-- Assign btn class for consistent button styling -->
+            </div>
         </form>
-        <div>
-            <a href="/reset">Reset Password</a>
-        </div>
         
     </main>
 <%- include('../includes/end.ejs') %>

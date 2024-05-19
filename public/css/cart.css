@@ -1,8 +1,7 @@
 .cart__item-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   margin: auto;
+  padding: 0;
   width: 40rem;
   max-width: 90%;
 }
@@ -12,8 +11,15 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cart__item h1,
@@ -22,4 +28,3 @@
   font-size: 1.2rem;
   margin: 0;
 }
-

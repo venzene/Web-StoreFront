@@ -2,12 +2,15 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: rgb(221, 215, 215);
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
@@ -29,15 +32,23 @@ form {
 
 .image img {
   height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.05);
 }
 
 .main-header {
   width: 100%;
   height: 3.5rem;
-  background-color: #00695c;
+  background-color: #34495e;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .main-header__nav {
@@ -68,6 +79,7 @@ form {
   text-decoration: none;
   color: white;
   cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .main-header__item a:hover,
@@ -75,7 +87,8 @@ form {
 .main-header__item a.active,
 .main-header__item button:hover,
 .main-header__item button:active {
-  color: #ffeb3b;
+  color: #f39c12;
+  transform: scale(1.1);
 }
 
 .mobile-nav {
@@ -85,11 +98,12 @@ form {
   position: fixed;
   left: 0;
   top: 0;
-  background: white;
+  background: #ecf0f1;
   z-index: 10;
   padding: 2rem 1rem 1rem 2rem;
   transform: translateX(-100%);
-  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, background-color 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .mobile-nav.open {
@@ -105,7 +119,7 @@ form {
 }
 
 .mobile-nav__item {
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -113,12 +127,13 @@ form {
 .mobile-nav__item button {
   font: inherit;
   text-decoration: none;
-  color: black;
+  color: #34495e;
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
   background: transparent;
   border: none;
   cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .mobile-nav__item a:active,
@@ -126,9 +141,10 @@ form {
 .mobile-nav__item a.active,
 .mobile-nav__item button:hover,
 .mobile-nav__item button:active {
-  background: #00695c;
+  background: #34495e;
   color: white;
   border-radius: 3px;
+  transform: scale(1.05);
 }
 
 #side-menu-toggle {
@@ -139,6 +155,7 @@ form {
   background: transparent;
   color: white;
   cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
 #side-menu-toggle:focus {
@@ -147,8 +164,9 @@ form {
 
 #side-menu-toggle:active,
 #side-menu-toggle:hover {
-  color: #ffeb3b;
-  border-color: #ffeb3b;
+  color: #f39c12;
+  border-color: #f39c12;
+  transform: rotate(90deg);
 }
 
 .backdrop {
@@ -167,10 +185,20 @@ form {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
+  gap: 1rem;
 }
 
 .card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card__header,
@@ -191,6 +219,12 @@ form {
 
 .card__image img {
   width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card__image img:hover {
+  transform: scale(1.05);
 }
 
 .card__actions {
@@ -205,47 +239,52 @@ form {
 
 .btn {
   display: inline-block;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font: inherit;
-  border: 1px solid #00695c;
-  color: #00695c;
+  border: 1px solid #34495e;
+  color: #34495e;
   background: white;
   border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #00695c;
+  background-color: #34495e;
   color: white;
+  transform: scale(1.1);
 }
 
 .btn.danger {
-  color: red;
-  border-color: red;
+  color: #e74c3c;
+  border-color: #e74c3c;
 }
 
 .btn.danger:hover,
 .btn.danger:active {
-  background: red;
+  background: #e74c3c;
   color: white;
+  transform: scale(1.1);
 }
 
 .user-message {
   margin: auto;
   width: 90%;
-  border: 1px solid #4771fa;
+  border: 1px solid #3498db;
   padding: 0.5rem;
   border-radius: 3px;
-  background: #b9c9ff;
+  background: #d6eaf8;
   text-align: center;
+  color: #2980b9;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .user-message--error {
-  border-color: red;
-  background: rgb(255, 176, 176);
-  color: red;
+  border-color: #e74c3c;
+  background: #f5b7b1;
+  color: #e74c3c;
 }
 
 @media (min-width: 768px) {
