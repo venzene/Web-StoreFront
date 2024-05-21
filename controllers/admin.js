@@ -43,12 +43,20 @@ exports.postAddProduct = (req,res,next)=>{
         res.redirect('/admin/products');
     })
     .catch(err => {
+<<<<<<< HEAD
         // return res.status(500).render('admin/add-product', {
+=======
+        // res.status(500).render('admin/edit-product', {
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         //     pageTitle: 'Add Product',
         //     path: '/admin/add-product',
         //     editing: false,
         //     hasError: true,
+<<<<<<< HEAD
         //     errorMessage: 'DB opertaion failed !!',
+=======
+        //     errorMessage: 'Database operation failed, Please try again !!',
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         //     validationErrors: [],
         //     product: {
         //         title: title,
@@ -59,7 +67,11 @@ exports.postAddProduct = (req,res,next)=>{
         // });
         // res.redirect('/500');
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
 };
@@ -86,7 +98,11 @@ exports.getEditProduct = (req,res,next) => {
         });
     }).catch(err => {
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
 };
@@ -131,7 +147,11 @@ exports.postEditProduct = (req, res, next) => {
     })
     .catch(err => {
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
 }
@@ -146,7 +166,11 @@ exports.getProducts = (req, res, next) => {
         })
     }).catch(err => {
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
 };
@@ -160,7 +184,11 @@ exports.postDeleteProduct = (req,res,next) => {
     })
     .catch(err => {
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
 }

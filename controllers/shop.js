@@ -12,7 +12,11 @@ exports.getProducts = (req, res, next) => {
         });
     }).catch(err => {
       const error = new Error(err);
+<<<<<<< HEAD
       error.httpStatusCode= 500;
+=======
+      error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
@@ -29,7 +33,11 @@ exports.getProduct = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
+<<<<<<< HEAD
       error.httpStatusCode= 500;
+=======
+      error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 }
@@ -44,7 +52,11 @@ exports.getIndex = (req, res, next) => {
         }); 
     }).catch(err => {
       const error = new Error(err);
+<<<<<<< HEAD
       error.httpStatusCode= 500;
+=======
+      error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
@@ -62,7 +74,11 @@ exports.getCart = (req, res, next) => {
       })
       .catch(err => {
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
   };
@@ -75,11 +91,21 @@ exports.postCart =(req, res, next) => {
     .then(result => {
         console.log(result);
         res.redirect('/cart');
+<<<<<<< HEAD
     }).catch(err => {
       const error = new Error(err);
       error.httpStatusCode= 500;
       return next(error);
   });
+=======
+    })
+    .catch(err => {
+      const error = new Error(err);
+      error.httpStatusCode = 500;
+      return next(error);
+  });
+
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
 };
 
 exports.postCartDeleteProduct = (req, res, next) => {
@@ -90,7 +116,11 @@ exports.postCartDeleteProduct = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
+<<<<<<< HEAD
       error.httpStatusCode= 500;
+=======
+      error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
@@ -119,7 +149,11 @@ exports.postOrder = (req, res, next) => {
       })
       .catch(err => {
         const error = new Error(err);
+<<<<<<< HEAD
         error.httpStatusCode= 500;
+=======
+        error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
         return next(error);
     });
   };
@@ -136,7 +170,11 @@ exports.getOrders = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
+<<<<<<< HEAD
       error.httpStatusCode= 500;
+=======
+      error.httpStatusCode = 500;
+>>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
