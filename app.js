@@ -64,16 +64,10 @@ app.use((req, res, next) => {
     res.locals.isAuthenticated = req.session.isLoggedIn;
     res.locals.csrfToken = req.csrfToken();
     next();
-<<<<<<< HEAD
 })
 
 app.use((req, res, next) => {
     // throw new Error(err);
-=======
-});
-
-app.use((req, res, next) => {
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
     if(!req.session.user) {
         return next();
     }
@@ -87,12 +81,7 @@ app.use((req, res, next) => {
     })
     .catch(err => {
         next(new Error(err));
-<<<<<<< HEAD
     });
-=======
-    }
-    );
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
 });
 
 app.use('/admin', adminRoutes);
@@ -105,19 +94,11 @@ app.use(errorController.get404);
 
 app.use((error, req, res, next) => {
     // res.redirect('/500');
-<<<<<<< HEAD
     res.status(500).render('500',{
     path:'/500',
     pageTitle: 'Error',
     isAuthenticated: req.session.isLoggedIn
   });
-=======
-    res.status(500).render('500', {
-        path:'/500',
-        pageTitle: 'Some Error Occured.',
-        isAuthenticated: req.session.isLoggedIn
-      });
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
 })
 
 mongoose.connect(MONGODB_URI)

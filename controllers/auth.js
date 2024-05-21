@@ -95,11 +95,7 @@ exports.postLogin = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
-<<<<<<< HEAD
       error.httpStatusCode= 500;
-=======
-      error.httpStatusCode = 500;
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
@@ -141,11 +137,7 @@ exports.postSignup = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
-<<<<<<< HEAD
       error.httpStatusCode= 500;
-=======
-      error.httpStatusCode = 500;
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 }
@@ -202,11 +194,7 @@ exports.postReset = (req, res, next) =>{
     })
     .catch(err => {
       const error = new Error(err);
-<<<<<<< HEAD
       error.httpStatusCode= 500;
-=======
-      error.httpStatusCode = 500;
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
   })
@@ -232,11 +220,7 @@ exports.getNewPassword = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
-<<<<<<< HEAD
       error.httpStatusCode= 500;
-=======
-      error.httpStatusCode = 500;
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
@@ -267,11 +251,7 @@ exports.postNewPassword = (req, res, next) => {
     })
     .catch(err => {
       const error = new Error(err);
-<<<<<<< HEAD
       error.httpStatusCode= 500;
-=======
-      error.httpStatusCode = 500;
->>>>>>> ce2bb9d41ec336aa2beb297d9c040a0c4a805a1d
       return next(error);
   });
 };
