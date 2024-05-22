@@ -300,3 +300,39 @@ form {
     width: 30rem;
   }
 }
+
+.pagination {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #34495e; /* Updated to match the primary color */
+  padding: 0.5rem 1rem; /* Added some padding for better spacing */
+  border: 1px solid #34495e; /* Updated to match the primary color */
+  margin: 0 0.5rem; /* Adjusted margin for better spacing */
+  border-radius: 5px; /* Added border radius for a modern look */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+.pagination a:hover,
+.pagination a:active 
+.pagination a.active{
+  background: #34495e; /* Updated to match the primary color */
+  color: white; /* Contrasting text color for hover state */
+}
+
+/* Disabled state for pagination links */
+.pagination a.disabled {
+  color: #ccc;
+  border-color: #ccc;
+  pointer-events: none; /* Prevent clicks on disabled links */
+}
+
+/* Active page link styling */
+.pagination a.active {
+  background: #34495e; /* Active link background */
+  color: white; /* Active link text color */
+  border-color: #34495e; /* Active link border color */
+}
