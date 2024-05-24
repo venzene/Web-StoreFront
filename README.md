@@ -1,10 +1,30 @@
 # E-commerce
-A project made with the help of Node.js and Express.js.
 
-At first, i started with basic HTML, CSS and Node & Express. Then went on to add Pug as as templating engine then finnaly switched EJS.
+Overview
+This project serves as the culmination of the Node.js Complete Guide course. It encompasses a comprehensive exploration of Node.js, covering fundamental concepts to advanced techniques. The project's primary aim is to provide hands-on experience and practical understanding of Node.js development, addressing real-world scenarios and challenges.
 
-Then i learnt handling the routes and implementing MVC architecture. 
+Other techstack includes: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
 
-Started with JSON files to save User-Data, and implemented functions to add product, delete product, add to cart, admin page and some other functionality. And as of now, im, learning SQL DB and transitioning into that and modifying the functions.
+Features
+Node.js Basics & Core Modules: Understand the fundamental concepts and built-in modules of Node.js.
+Express.js Integration: Implement routes, middleware, and other features using Express.js.
+Database Integration: Utilize SQL (MySQL) with Sequelize and NoSQL (MongoDB) with Mongoose for data storage and retrieval.
+User Authentication and Authorization: Implement authentication and authorization mechanisms for user management.
+REST and GraphQL APIs: Build both RESTful and GraphQL APIs to handle data manipulation and retrieval.
+Real-time Web Services: Develop a real-time Node.js application using WebSockets for instant communication.
+File Handling and Uploads: Manage file uploads and downloads efficiently within the application.
+Payment Integration: Handle payments securely using Stripe.js integration.
+Email Sending: Send emails to users for various notifications and communication purposes.
+Data Validation and Pagination: Implement validation mechanisms for user input and pagination for data presentation.
+Testing and Deployment: Conduct automated unit testing and deploy the Node.js application for production use.
+TypeScript Integration: Explore TypeScript integration with Node.js for improved code quality and maintainability.
+Projects
+This project includes the development of two major projects: an online shop (including checkout and payments functionality) and a blog. These projects serve as practical demonstrations of the concepts learned throughout the course, providing a realistic environment for learning and experimentation.
 
-stay tuned for further updates ;)
+Requirements
+To run the project locally, follow the below steps:
+-> clone the project repository from GitHub
+-> you will need to put your own api keys, for email and payment service 
+-> also change the mongoDB uri to your database's uri
+-> then run the command "npm install" in your terminal
+-> then "npm start" and your are good to go.
