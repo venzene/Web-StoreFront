@@ -23,9 +23,9 @@ Other techstack includes: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
 This project includes the development of two major projects: an online shop (including checkout and payments functionality) and a blog. These projects serve as practical demonstrations of the concepts learned throughout the course, providing a realistic environment for learning and experimentation.
 
 ## Requirements
-To run the project locally, follow the below steps:
--> clone the project repository from GitHub
--> you will need to put your own api keys, for email and payment service 
--> also change the mongoDB uri to your database's uri
--> then run the command "npm install" in your terminal
+To run the project locally, follow the below steps:<br>
+-> clone the project repository from GitHub <br>
+-> you will need to put your own api keys, for email and payment service <br>
+-> also change the mongoDB uri to your database's uri<br>
+-> then run the command "npm install" in your terminal<br>
 -> then "npm start" and your are good to go.
