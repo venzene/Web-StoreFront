@@ -1,11 +1,11 @@
 # E-commerce
 
-Overview
+## Overview
 This project serves as the culmination of the Node.js Complete Guide course. It encompasses a comprehensive exploration of Node.js, covering fundamental concepts to advanced techniques. The project's primary aim is to provide hands-on experience and practical understanding of Node.js development, addressing real-world scenarios and challenges.
 
 Other techstack includes: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
 
-Features
+##Features
 Node.js Basics & Core Modules: Understand the fundamental concepts and built-in modules of Node.js.
 Express.js Integration: Implement routes, middleware, and other features using Express.js.
 Database Integration: Utilize SQL (MySQL) with Sequelize and NoSQL (MongoDB) with Mongoose for data storage and retrieval.
@@ -21,7 +21,7 @@ TypeScript Integration: Explore TypeScript integration with Node.js for improved
 Projects
 This project includes the development of two major projects: an online shop (including checkout and payments functionality) and a blog. These projects serve as practical demonstrations of the concepts learned throughout the course, providing a realistic environment for learning and experimentation.
 
-Requirements
+##Requirements
 To run the project locally, follow the below steps:
 -> clone the project repository from GitHub
 -> you will need to put your own api keys, for email and payment service 
