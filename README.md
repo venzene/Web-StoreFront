@@ -7,6 +7,7 @@ Other techstack includes: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
 
 ## Deployment on Heroku
 #### https://webstorefront-69e8dfbf3b6e.herokuapp.com/
+###### (There are 2 bugs i need to fix)
 
 ## Features
 #### Node.js Basics & Core Modules: Understand the fundamental concepts and built-in modules of Node.js.
