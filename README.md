@@ -5,6 +5,9 @@ This project serves as the culmination of the Node.js Complete Guide course. It 
 
 Other techstack includes: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
 
+## Deployment on Heroku
+#### https://webstorefront-69e8dfbf3b6e.herokuapp.com/
+
 ## Features
 #### Node.js Basics & Core Modules: Understand the fundamental concepts and built-in modules of Node.js.
 #### Express.js Integration: Implement routes, middleware, and other features using Express.js.
@@ -23,3 +26,6 @@ To run the project locally, follow the below steps:<br>
 -> also change the mongoDB uri to your database's uri<br>
 -> then run the command "npm install" in your terminal<br>
 -> then "npm start" and your are good to go.
+
+## Deployment on Heroku
+#### https://webstorefront-69e8dfbf3b6e.herokuapp.com/
