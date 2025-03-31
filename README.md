@@ -3,7 +3,7 @@
 ## Overview
 This project serves as the culmination of the Node.js Complete Guide course. It encompasses a comprehensive exploration of Node.js, covering fundamental concepts to advanced techniques. The project's primary aim is to provide hands-on experience and practical understanding of Node.js development, addressing real-world scenarios and challenges.
 
-library includes: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
+libraries & packages used: Bcrypt, MongoDb, mongoose, EJS, nodemon and more.
 
 ## Features
 #### Node.js Basics & Core Modules: Understand the fundamental concepts and built-in modules of Node.js.
